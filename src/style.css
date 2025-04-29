@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Flowers';
+    src: url(../fonte/Blooming\ Flowers\ Free.otf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    max-width: 1920px;
+    height: 100vh;
+    background-color: rgb(245, 248, 208);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    font-family: 'Flowers', serif;
+    font-size: 80px;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+}
+
+.box-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:80px;
+}
+
+
+.container-input {
+    background-color: #ef613c;
+    width: 70%;
+    max-width: 500px;
+    padding: 30px 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-input input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container-input input:focus {
+    border: 3px solid #04a1e9;
+
+}
+
+.container-input button {
+    min-width: 25%;
+    padding: 8px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #04a1e9;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.personagem img {
+    width: 350px;
+}
+
+.personagem {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.balao {
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 2px solid #333;
+    padding: 8px 12px;
+    border-radius: 12px;
+    width: auto;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+
+.balao::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #333;
+}
+
+.balao::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 0.3px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+
+.box-paragrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+#numero, #numeros-usados {
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.container-paragrafo{
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+    gap: 25px;
+}
