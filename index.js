@@ -1,29 +1,3 @@
-// let numeroSecreto = Math.floor(Math.random() * 10) + 1
-// let tentativa = Number(prompt('Advinhe um número de 1 a 10'))
-// let tentativas = 1
-// let numerosSorteados = [tentativa]
-
-
-
-
-// while (tentativa !== numeroSecreto) {
-//     if (tentativa > 10 || isNaN(tentativa)) {
-//         alert('Digite um número válido')
-//         tentativa = Number(prompt('Advinhe um número de 1 a 10'))
-//         continue;
-//     }
-//     if (tentativa > numeroSecreto) {
-//         tentativa = Number(prompt('O número é menor'))
-//     } else {
-//         tentativa = Number(prompt('O número é maior'))
-//     }
-
-//     tentativas++
-
-//  numerosSorteados.push(tentativa)
-// }
-
-// alert(`Parabéns!O número era ${numeroSecreto} Você acertou em ${tentativas} tentativas. Os números que você tentou foram: ${numerosSorteados.join(', ')}`)
 
 let numeroSecreto = Math.floor(Math.random() * 10) + 1
 let tentativas = 0
